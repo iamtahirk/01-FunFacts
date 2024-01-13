@@ -17,12 +17,12 @@ This React app displays fun facts about React and allows users to toggle between
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/iamtahirk/FunFacts.git
+git clone https://github.com/iamtahirk/01-FunFacts.git
 ```
 
 2. Navigate to the project directory:
 ```
-cd FunFacts
+cd 01-FunFacts
 ```
 
 3. Install dependencies:
