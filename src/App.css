@@ -1,0 +1,186 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #f0f0f0;
+  box-shadow: 0px 4px 8px rgba(221, 221, 221, 0.2);
+}
+.header-dark {
+  background-color: #21222A;
+  border-bottom: 2px solid #363636;
+  box-shadow: 0px 4px 8px rgba(65, 65, 65, 0.2);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em 1.5em;
+}
+
+.logotitle {
+  display: flex;
+}
+
+nav h3 {
+  color: #61DAFB;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+}
+
+nav h4 {
+  color: #DEE;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+}
+
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  color: rgb(26, 26, 26);
+  font-size: 11px;
+}
+
+.toggle-container-dark {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 11px;
+}
+
+.toggle-label {
+  margin: 0 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-slider {
+  width: 40px;
+  height: 20px;
+  background-color: #111111;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+input:checked + .toggle-slider {
+  background-color: #ffffff; /* green color when checked */
+}
+
+.toggle-slider:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  top: 1px;
+  left: 1px;
+  transition: 0.3s;
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(20px);
+  background-color: rgb(12, 12, 12);
+}
+
+
+
+main {
+  padding: 24px 36px;
+  background: url(./assets/reactjs-icon-2.png) no-repeat right 55%;
+  background-color: #ffffff;
+  padding-bottom:48px;
+  color: #2B283A;
+}
+
+main.dark {
+  background: url(./assets/reactjs-icon-2-dark.png) no-repeat right 55%;
+  background-color: #282D35;
+}
+
+.logoimg {
+  will-change: filter;
+  transition: filter 300ms;
+  padding-right:14px;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.funfacts>li::marker {
+  color: #61DAFB;
+  font-size:1.4rem;
+}
+
+.funfacts>li {
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+
+main.dark h1,
+main.dark .funfacts {
+  color: white;
+}
+
+footer {
+  background-color:#f5f5f5;
+  text-align: center;
+  padding:1.2em 1.5em;
+  color: rgb(44, 44, 44);
+}
+
+footer.dark {
+  background-color:#1d1d1d;
+  text-align: center;
+  padding:1.2em 1.5em;
+  color: rgb(204, 204, 204);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
