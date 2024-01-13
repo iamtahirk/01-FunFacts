@@ -10,8 +10,8 @@ This React app displays fun facts about React and allows users to toggle between
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Built With](#built-with)
-- [Contributing](#contributing)
+- [Dependencies](#Dependencies)
+- [Credits](#Credits)
 - [License](#license)
 
 ## Installation
