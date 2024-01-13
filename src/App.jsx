@@ -12,7 +12,7 @@ function App() {
   }
 
   useEffect(() => {
-    document.body.className = darkMode ? 'dark' : undefined;
+    document.body.className = darkMode ? 'dark' : '';
   }, [darkMode]);
 
   return (
